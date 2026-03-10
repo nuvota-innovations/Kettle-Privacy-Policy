@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy – Kettle</title>
-  <meta name="description" content="Privacy Policy for the Kettle mobile application by Nuvota Innovations Private Limited. Learn how we collect, use, and protect your personal data." />
+  <meta name="description"
+    content="Privacy Policy for the Kettle mobile application by Nuvota Innovations Private Limited. Learn how we collect, use, and protect your personal data." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
       --brand: #FF6B35;
@@ -17,7 +25,7 @@
       --surface: #0F1117;
       --surface2: #181C27;
       --surface3: #1E2235;
-      --border: rgba(255,255,255,0.08);
+      --border: rgba(255, 255, 255, 0.08);
       --text: #F0F2F8;
       --text-muted: #8B90A7;
       --text-dim: #5A5F75;
@@ -25,7 +33,9 @@
       --radius-sm: 10px;
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: 'Inter', system-ui, sans-serif;
@@ -44,16 +54,20 @@
       position: relative;
       overflow: hidden;
     }
+
     .hero::before {
       content: '';
       position: absolute;
-      top: -120px; left: 50%;
+      top: -120px;
+      left: 50%;
       transform: translateX(-50%);
-      width: 600px; height: 600px;
+      width: 600px;
+      height: 600px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,107,53,0.18) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(255, 107, 53, 0.18) 0%, transparent 65%);
       pointer-events: none;
     }
+
     .logo-badge {
       display: inline-flex;
       align-items: center;
@@ -69,7 +83,11 @@
       text-transform: uppercase;
       margin-bottom: 24px;
     }
-    .logo-badge svg { width: 18px; height: 18px; }
+
+    .logo-badge svg {
+      width: 18px;
+      height: 18px;
+    }
 
     h1 {
       font-size: clamp(2rem, 5vw, 3.2rem);
@@ -81,12 +99,14 @@
       background-clip: text;
       margin-bottom: 16px;
     }
+
     .hero p {
       color: var(--text-muted);
       font-size: 1.05rem;
       max-width: 580px;
       margin: 0 auto 28px;
     }
+
     .meta-row {
       display: flex;
       align-items: center;
@@ -96,7 +116,12 @@
       font-size: 13px;
       color: var(--text-dim);
     }
-    .meta-row span { display: flex; align-items: center; gap: 6px; }
+
+    .meta-row span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
 
     /* ── Layout ───────────────────────────────────────────── */
     .wrapper {
@@ -113,6 +138,7 @@
       padding: 28px 32px;
       margin-bottom: 56px;
     }
+
     .toc h2 {
       font-size: 13px;
       font-weight: 600;
@@ -121,6 +147,7 @@
       color: var(--brand);
       margin-bottom: 16px;
     }
+
     .toc ol {
       list-style: none;
       display: grid;
@@ -128,7 +155,11 @@
       gap: 6px 24px;
       counter-reset: toc;
     }
-    .toc ol li { counter-increment: toc; }
+
+    .toc ol li {
+      counter-increment: toc;
+    }
+
     .toc ol li a {
       display: flex;
       align-items: center;
@@ -139,6 +170,7 @@
       transition: color 0.2s;
       padding: 3px 0;
     }
+
     .toc ol li a::before {
       content: counter(toc, decimal-leading-zero);
       font-size: 11px;
@@ -146,10 +178,16 @@
       color: var(--brand);
       min-width: 22px;
     }
-    .toc ol li a:hover { color: var(--text); }
+
+    .toc ol li a:hover {
+      color: var(--text);
+    }
 
     /* ── Sections ─────────────────────────────────────────── */
-    section { margin-bottom: 56px; scroll-margin-top: 32px; }
+    section {
+      margin-bottom: 56px;
+      scroll-margin-top: 32px;
+    }
 
     .section-header {
       display: flex;
@@ -157,8 +195,10 @@
       gap: 14px;
       margin-bottom: 24px;
     }
+
     .section-icon {
-      width: 42px; height: 42px;
+      width: 42px;
+      height: 42px;
       border-radius: 12px;
       background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
       display: flex;
@@ -167,6 +207,7 @@
       flex-shrink: 0;
       font-size: 18px;
     }
+
     h2.section-title {
       font-size: 1.35rem;
       font-weight: 700;
@@ -174,16 +215,41 @@
       letter-spacing: -0.01em;
     }
 
-    p, li { color: var(--text-muted); }
-    p { margin-bottom: 14px; }
-    p:last-child { margin-bottom: 0; }
+    p,
+    li {
+      color: var(--text-muted);
+    }
 
-    ul, ol { padding-left: 20px; margin-bottom: 14px; }
-    li { margin-bottom: 6px; }
-    li strong { color: var(--text); }
+    p {
+      margin-bottom: 14px;
+    }
 
-    a { color: var(--brand); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul,
+    ol {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    li strong {
+      color: var(--text);
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
 
     /* ── Cards ────────────────────────────────────────────── */
     .card-grid {
@@ -192,6 +258,7 @@
       gap: 14px;
       margin-top: 20px;
     }
+
     .card {
       background: var(--surface2);
       border: 1px solid var(--border);
@@ -199,13 +266,38 @@
       padding: 18px 20px;
       transition: border-color 0.2s, transform 0.2s;
     }
-    .card:hover { border-color: rgba(255,107,53,0.3); transform: translateY(-2px); }
-    .card .card-icon { font-size: 22px; margin-bottom: 10px; }
-    .card .card-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
-    .card .card-desc { font-size: 13px; color: var(--text-dim); line-height: 1.55; }
+
+    .card:hover {
+      border-color: rgba(255, 107, 53, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .card .card-icon {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .card .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .card .card-desc {
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.55;
+    }
 
     /* ── Permission table ─────────────────────────────────── */
-    .perm-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14px; }
+    .perm-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
     .perm-table th {
       background: var(--surface3);
       color: var(--text-muted);
@@ -216,45 +308,72 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
     }
+
     .perm-table td {
       padding: 12px 16px;
       border-top: 1px solid var(--border);
       color: var(--text-muted);
       vertical-align: top;
     }
-    .perm-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+    .perm-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
     .perm-table td:first-child {
       font-family: 'Courier New', monospace;
       font-size: 12px;
       color: var(--brand);
       white-space: nowrap;
     }
-    .perm-table td strong { color: var(--text); display: block; margin-bottom: 3px; }
+
+    .perm-table td strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 3px;
+    }
 
     /* ── Highlight box ────────────────────────────────────── */
     .highlight {
-      background: linear-gradient(135deg, rgba(255,107,53,0.08), rgba(255,107,53,0.03));
-      border: 1px solid rgba(255,107,53,0.2);
+      background: linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(255, 107, 53, 0.03));
+      border: 1px solid rgba(255, 107, 53, 0.2);
       border-left: 3px solid var(--brand);
       border-radius: var(--radius-sm);
       padding: 18px 22px;
       margin: 20px 0;
     }
-    .highlight p { margin: 0; font-size: 14px; }
+
+    .highlight p {
+      margin: 0;
+      font-size: 14px;
+    }
 
     /* ── Info box ─────────────────────────────────────────── */
     .info-box {
-      background: rgba(59,130,246,0.07);
-      border: 1px solid rgba(59,130,246,0.2);
+      background: rgba(59, 130, 246, 0.07);
+      border: 1px solid rgba(59, 130, 246, 0.2);
       border-left: 3px solid #3b82f6;
       border-radius: var(--radius-sm);
       padding: 16px 20px;
       margin: 16px 0;
     }
-    .info-box p { margin: 0; font-size: 14px; color: #93c5fd; }
+
+    .info-box p {
+      margin: 0;
+      font-size: 14px;
+      color: #93c5fd;
+    }
 
     /* ── Third-party list ─────────────────────────────────── */
-    .third-party-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+    .third-party-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
     .third-party-list li {
       background: var(--surface2);
       border: 1px solid var(--border);
@@ -264,9 +383,24 @@
       align-items: flex-start;
       gap: 12px;
     }
-    .third-party-list li .tp-icon { font-size: 20px; flex-shrink: 0; }
-    .third-party-list li .tp-body .tp-name { font-size: 14px; font-weight: 600; color: var(--text); display: block; margin-bottom: 2px; }
-    .third-party-list li .tp-body .tp-desc { font-size: 13px; color: var(--text-dim); }
+
+    .third-party-list li .tp-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .third-party-list li .tp-body .tp-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .third-party-list li .tp-body .tp-desc {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
 
     /* ── Contact card ─────────────────────────────────────── */
     .contact-card {
@@ -276,10 +410,31 @@
       padding: 32px;
       margin-top: 20px;
     }
-    .contact-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 16px; color: var(--text); }
-    .contact-row { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
-    .contact-row .ci { font-size: 16px; flex-shrink: 0; padding-top: 2px; }
-    .contact-row p { margin: 0; font-size: 14px; }
+
+    .contact-card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .contact-row .ci {
+      font-size: 16px;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+
+    .contact-row p {
+      margin: 0;
+      font-size: 14px;
+    }
 
     /* ── Footer ───────────────────────────────────────────── */
     footer {
@@ -289,407 +444,495 @@
       font-size: 13px;
       color: var(--text-dim);
     }
-    footer a { color: var(--text-muted); }
+
+    footer a {
+      color: var(--text-muted);
+    }
 
     @media (max-width: 600px) {
-      .card-grid { grid-template-columns: 1fr; }
-      .perm-table { font-size: 12px; }
-      .toc ol { grid-template-columns: 1fr; }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .perm-table {
+        font-size: 12px;
+      }
+
+      .toc ol {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<!-- ══════════ HERO ══════════ -->
-<header class="hero">
-  <div class="logo-badge">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-    </svg>
-    Privacy Policy
-  </div>
-  <h1>Your Privacy Matters</h1>
-  <p>Kettle is committed to protecting your personal data. This policy explains what we collect, why we collect it, and how you stay in control.</p>
-  <div class="meta-row">
-    <span>📱 Kettle App</span>
-    <span>📅 Effective: March 3, 2026</span>
-    <span>🌐 kettleweb.com</span>
-  </div>
-</header>
-
-<!-- ══════════ MAIN ══════════ -->
-<main class="wrapper">
-
-  <!-- Table of Contents -->
-  <nav class="toc">
-    <h2>📋 Contents</h2>
-    <ol>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#data-collected">Data We Collect</a></li>
-      <li><a href="#permissions">App Permissions</a></li>
-      <li><a href="#how-we-use">How We Use Your Data</a></li>
-      <li><a href="#third-party">Third-Party Services</a></li>
-      <li><a href="#in-app-purchases">In-App Purchases</a></li>
-      <li><a href="#data-sharing">Data Sharing</a></li>
-      <li><a href="#data-retention">Data Retention</a></li>
-      <li><a href="#security">Security</a></li>
-      <li><a href="#children">Children's Privacy</a></li>
-      <li><a href="#your-rights">Your Rights</a></li>
-      <li><a href="#changes">Policy Changes</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ol>
-  </nav>
-
-  <!-- ── 1. Overview ──────────────────────────────────── -->
-  <section id="overview">
-    <div class="section-header">
-      <div class="section-icon">🏠</div>
-      <h2 class="section-title">Overview</h2>
+  <!-- ══════════ HERO ══════════ -->
+  <header class="hero">
+    <div class="logo-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      </svg>
+      Privacy Policy
     </div>
-    <p>Kettle ("we," "our," or "us") is a professional networking and connection platform developed by <strong>NUVOTA INNOVATIONS PRIVATE LIMITED</strong>. Kettle is designed to help professionals discover, connect, and build meaningful professional relationships based on shared interests, industries, and goals.</p>
-    <p>This Privacy Policy applies to our mobile application ("App") available on Google Play and the Apple App Store, as well as our website at <a href="https://kettleweb.com" target="_blank" rel="noopener">kettleweb.com</a>.</p>
-    <p>By downloading or using Kettle, you agree to the collection and use of information as described in this policy. If you do not agree, please do not use the App.</p>
-    <div class="highlight">
-      <p>📧 Questions? Email us at <a href="mailto:privacy@kettleweb.com">privacy@kettleweb.com</a> — we typically respond within 48 business hours.</p>
+    <h1>Your Privacy Matters</h1>
+    <p>Kettle is committed to protecting your personal data. This policy explains what we collect, why we collect it,
+      and how you stay in control.</p>
+    <div class="meta-row">
+      <span>📱 Kettle App</span>
+      <span>📅 Effective: March 3, 2026</span>
+      <span>🌐 kettleweb.com</span>
     </div>
-  </section>
+  </header>
 
-  <!-- ── 2. Data We Collect ────────────────────────────── -->
-  <section id="data-collected">
-    <div class="section-header">
-      <div class="section-icon">📦</div>
-      <h2 class="section-title">Data We Collect</h2>
-    </div>
-    <p>We collect the following categories of information to provide and improve our services:</p>
+  <!-- ══════════ MAIN ══════════ -->
+  <main class="wrapper">
 
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-icon">👤</div>
-        <div class="card-title">Account & Profile Information</div>
-        <div class="card-desc">Name, email address, phone number, profile photo, professional bio, and sign-in credentials.</div>
+    <!-- Table of Contents -->
+    <nav class="toc">
+      <h2>📋 Contents</h2>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#data-collected">Data We Collect</a></li>
+        <li><a href="#permissions">App Permissions</a></li>
+        <li><a href="#how-we-use">How We Use Your Data</a></li>
+        <li><a href="#third-party">Third-Party Services</a></li>
+        <li><a href="#in-app-purchases">In-App Purchases</a></li>
+        <li><a href="#data-sharing">Data Sharing</a></li>
+        <li><a href="#data-retention">Data Retention</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#children">Children's Privacy</a></li>
+        <li><a href="#your-rights">Your Rights</a></li>
+        <li><a href="#changes">Policy Changes</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </nav>
+
+    <!-- ── 1. Overview ──────────────────────────────────── -->
+    <section id="overview">
+      <div class="section-header">
+        <div class="section-icon">🏠</div>
+        <h2 class="section-title">Overview</h2>
       </div>
-      <div class="card">
-        <div class="card-icon">📍</div>
-        <div class="card-title">Location Data</div>
-        <div class="card-desc">Precise GPS coordinates (foreground) used for location-based professional discovery and trip/event planning.</div>
+      <p>Kettle ("we," "our," or "us") is a professional networking and connection platform developed by <strong>NUVOTA
+          INNOVATIONS PRIVATE LIMITED</strong>. Kettle is designed to help professionals discover, connect, and build
+        meaningful professional relationships based on shared interests, industries, and goals.</p>
+      <p>This Privacy Policy applies to our mobile application ("App") available on Google Play and the Apple App Store,
+        as well as our website at <a href="https://kettleweb.com" target="_blank" rel="noopener">kettleweb.com</a>.</p>
+      <p>By downloading or using Kettle, you agree to the collection and use of information as described in this policy.
+        If you do not agree, please do not use the App.</p>
+      <div class="highlight">
+        <p>📧 Questions? Email us at <a href="mailto:support@kettleweb.com">support@kettleweb.com</a> — we typically
+          respond within 48 business hours.</p>
       </div>
-      <div class="card">
-        <div class="card-icon">🎙️</div>
-        <div class="card-title">Audio & Media</div>
-        <div class="card-desc">Voice messages recorded in-app and photos/videos you choose to share within the platform.</div>
+    </section>
+
+    <!-- ── 2. Data We Collect ────────────────────────────── -->
+    <section id="data-collected">
+      <div class="section-header">
+        <div class="section-icon">📦</div>
+        <h2 class="section-title">Data We Collect</h2>
       </div>
-      <div class="card">
-        <div class="card-icon">💬</div>
-        <div class="card-title">Messages & Communications</div>
-        <div class="card-desc">Text, emoji, and voice messages exchanged in chats between connected users and groups.</div>
+      <p>We collect the following categories of information to provide and improve our services:</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">👤</div>
+          <div class="card-title">Account & Profile Information</div>
+          <div class="card-desc">Name, email address, phone number, profile photo, professional bio, and sign-in
+            credentials.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">📍</div>
+          <div class="card-title">Location Data</div>
+          <div class="card-desc">Precise GPS coordinates (foreground) used for location-based professional discovery and
+            trip/event planning.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎙️</div>
+          <div class="card-title">Audio & Media</div>
+          <div class="card-desc">Voice messages recorded in-app and photos/videos you choose to share within the
+            platform.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">💬</div>
+          <div class="card-title">Messages & Communications</div>
+          <div class="card-desc">Text, emoji, and voice messages exchanged in chats between connected users and groups.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <div class="card-title">Device Information</div>
+          <div class="card-desc">Device model, OS version, unique device identifiers, and push notification tokens
+            (FCM).</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <div class="card-title">Usage & Analytics Data</div>
+          <div class="card-desc">Features accessed, screens viewed, and app crash logs — collected via Firebase
+            Analytics & Crashlytics.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">💳</div>
+          <div class="card-title">Purchase Records</div>
+          <div class="card-desc">In-app subscription and purchase history, processed through RevenueCat and the
+            respective app store.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔗</div>
+          <div class="card-title">Network Activity</div>
+          <div class="card-desc">API requests to our servers at api.kettleweb.com for core app functionality and
+            real-time features.</div>
+        </div>
       </div>
-      <div class="card">
-        <div class="card-icon">📱</div>
-        <div class="card-title">Device Information</div>
-        <div class="card-desc">Device model, OS version, unique device identifiers, and push notification tokens (FCM).</div>
+    </section>
+
+    <!-- ── 3. Permissions ────────────────────────────────── -->
+    <section id="permissions">
+      <div class="section-header">
+        <div class="section-icon">🔐</div>
+        <h2 class="section-title">App Permissions</h2>
       </div>
-      <div class="card">
-        <div class="card-icon">📊</div>
-        <div class="card-title">Usage & Analytics Data</div>
-        <div class="card-desc">Features accessed, screens viewed, and app crash logs — collected via Firebase Analytics & Crashlytics.</div>
+      <p>The following Android permissions are requested by the app. We only request permissions essential to delivering
+        core functionality.</p>
+
+      <table class="perm-table">
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Why We Need It</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>INTERNET</td>
+            <td><strong>Network Access</strong>Required to connect to Kettle servers, load content, and enable all
+              real-time features.</td>
+          </tr>
+          <tr>
+            <td>ACCESS_FINE_LOCATION</td>
+            <td><strong>Precise Location</strong>Used for location-based professional discovery, real-time event and
+              trip location services.</td>
+          </tr>
+          <tr>
+            <td>ACCESS_COARSE_LOCATION</td>
+            <td><strong>Approximate Location</strong>Fallback for region-based search and discovery when precise GPS is
+              unavailable.</td>
+          </tr>
+          <tr>
+            <td>CAMERA</td>
+            <td><strong>Camera Access</strong>Used to capture profile photos and images to share on the platform using
+              the in-app camera.</td>
+          </tr>
+          <tr>
+            <td>RECORD_AUDIO</td>
+            <td><strong>Microphone</strong>Enables voice message recording in chats and group conversations.</td>
+          </tr>
+          <tr>
+            <td>MODIFY_AUDIO_SETTINGS</td>
+            <td><strong>Audio Routing</strong>Allows audio to route through Bluetooth earphones and headsets during
+              voice playback.</td>
+          </tr>
+          <tr>
+            <td>BLUETOOTH</td>
+            <td><strong>Bluetooth Device Support</strong>Enables audio output through Bluetooth headsets and earbuds for
+              voice messages.</td>
+          </tr>
+          <tr>
+            <td>READ_EXTERNAL_STORAGE</td>
+            <td><strong>File Reading</strong>Required on older Android versions to read media files when selecting
+              images from the gallery.</td>
+          </tr>
+          <tr>
+            <td>WRITE_EXTERNAL_STORAGE</td>
+            <td><strong>File Writing</strong>Required on older Android versions to save photos or audio files to device
+              storage.</td>
+          </tr>
+          <tr>
+            <td>com.android.vending.BILLING</td>
+            <td><strong>In-App Purchases</strong>Required to process subscriptions and purchases through Google Play
+              Billing.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="info-box" style="margin-top:20px;">
+        <p>ℹ️ You can revoke any permission at any time from <strong>Settings → Apps → Kettle → Permissions</strong>.
+          Revoking some permissions may limit certain features.</p>
       </div>
-      <div class="card">
-        <div class="card-icon">💳</div>
-        <div class="card-title">Purchase Records</div>
-        <div class="card-desc">In-app subscription and purchase history, processed through RevenueCat and the respective app store.</div>
+    </section>
+
+    <!-- ── 4. How We Use Your Data ──────────────────────── -->
+    <section id="how-we-use">
+      <div class="section-header">
+        <div class="section-icon">⚙️</div>
+        <h2 class="section-title">How We Use Your Data</h2>
       </div>
-      <div class="card">
-        <div class="card-icon">🔗</div>
-        <div class="card-title">Network Activity</div>
-        <div class="card-desc">API requests to our servers at api.kettleweb.com for core app functionality and real-time features.</div>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li><strong>Provide core services</strong> — professional profile creation, user discovery, connection features,
+          group management, real-time chat, and shared trip or event planning.</li>
+        <li><strong>Authenticate your identity</strong> — via phone number OTP verification.</li>
+        <li><strong>Send notifications</strong> — push notifications for messages, connection requests, and platform
+          updates via Firebase Cloud Messaging (FCM).</li>
+        <li><strong>Improve the app</strong> — anonymous analytics and crash reports help us identify and fix issues to
+          improve performance.</li>
+        <li><strong>Process payments</strong> — subscription and purchase flows are managed securely via RevenueCat and
+          the respective app store.</li>
+        <li><strong>Enable social and community features</strong> — sharing events, inviting connections, and engaging
+          in professional groups.</li>
+        <li><strong>Legal compliance</strong> — comply with applicable laws and respond to lawful requests from
+          authorities.</li>
+      </ul>
+      <div class="highlight">
+        <p>We do <strong>not</strong> sell your personal data to third parties. We do not use your data for targeted
+          advertising.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── 3. Permissions ────────────────────────────────── -->
-  <section id="permissions">
-    <div class="section-header">
-      <div class="section-icon">🔐</div>
-      <h2 class="section-title">App Permissions</h2>
-    </div>
-    <p>The following Android permissions are requested by the app. We only request permissions essential to delivering core functionality.</p>
-
-    <table class="perm-table">
-      <thead>
-        <tr>
-          <th>Permission</th>
-          <th>Why We Need It</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>INTERNET</td>
-          <td><strong>Network Access</strong>Required to connect to Kettle servers, load content, and enable all real-time features.</td>
-        </tr>
-        <tr>
-          <td>ACCESS_FINE_LOCATION</td>
-          <td><strong>Precise Location</strong>Used for location-based professional discovery, real-time event and trip location services.</td>
-        </tr>
-        <tr>
-          <td>ACCESS_COARSE_LOCATION</td>
-          <td><strong>Approximate Location</strong>Fallback for region-based search and discovery when precise GPS is unavailable.</td>
-        </tr>
-        <tr>
-          <td>CAMERA</td>
-          <td><strong>Camera Access</strong>Used to capture profile photos and images to share on the platform using the in-app camera.</td>
-        </tr>
-        <tr>
-          <td>RECORD_AUDIO</td>
-          <td><strong>Microphone</strong>Enables voice message recording in chats and group conversations.</td>
-        </tr>
-        <tr>
-          <td>MODIFY_AUDIO_SETTINGS</td>
-          <td><strong>Audio Routing</strong>Allows audio to route through Bluetooth earphones and headsets during voice playback.</td>
-        </tr>
-        <tr>
-          <td>BLUETOOTH</td>
-          <td><strong>Bluetooth Device Support</strong>Enables audio output through Bluetooth headsets and earbuds for voice messages.</td>
-        </tr>
-        <tr>
-          <td>READ_EXTERNAL_STORAGE</td>
-          <td><strong>File Reading</strong>Required on older Android versions to read media files when selecting images from the gallery.</td>
-        </tr>
-        <tr>
-          <td>WRITE_EXTERNAL_STORAGE</td>
-          <td><strong>File Writing</strong>Required on older Android versions to save photos or audio files to device storage.</td>
-        </tr>
-        <tr>
-          <td>com.android.vending.BILLING</td>
-          <td><strong>In-App Purchases</strong>Required to process subscriptions and purchases through Google Play Billing.</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="info-box" style="margin-top:20px;">
-      <p>ℹ️ You can revoke any permission at any time from <strong>Settings → Apps → Kettle → Permissions</strong>. Revoking some permissions may limit certain features.</p>
-    </div>
-  </section>
-
-  <!-- ── 4. How We Use Your Data ──────────────────────── -->
-  <section id="how-we-use">
-    <div class="section-header">
-      <div class="section-icon">⚙️</div>
-      <h2 class="section-title">How We Use Your Data</h2>
-    </div>
-    <p>We use the information we collect to:</p>
-    <ul>
-      <li><strong>Provide core services</strong> — professional profile creation, user discovery, connection features, group management, real-time chat, and shared trip or event planning.</li>
-      <li><strong>Authenticate your identity</strong> — via phone number OTP verification.</li>
-      <li><strong>Send notifications</strong> — push notifications for messages, connection requests, and platform updates via Firebase Cloud Messaging (FCM).</li>
-      <li><strong>Improve the app</strong> — anonymous analytics and crash reports help us identify and fix issues to improve performance.</li>
-      <li><strong>Process payments</strong> — subscription and purchase flows are managed securely via RevenueCat and the respective app store.</li>
-      <li><strong>Enable social and community features</strong> — sharing events, inviting connections, and engaging in professional groups.</li>
-      <li><strong>Legal compliance</strong> — comply with applicable laws and respond to lawful requests from authorities.</li>
-    </ul>
-    <div class="highlight">
-      <p>We do <strong>not</strong> sell your personal data to third parties. We do not use your data for targeted advertising.</p>
-    </div>
-  </section>
-
-  <!-- ── 5. Third-Party Services ──────────────────────── -->
-  <section id="third-party">
-    <div class="section-header">
-      <div class="section-icon">🔗</div>
-      <h2 class="section-title">Third-Party Services</h2>
-    </div>
-    <p>The App integrates the following third-party services. Each operates under its own privacy policy and terms.</p>
-
-    <ul class="third-party-list">
-      <li>
-        <span class="tp-icon">🔥</span>
-        <span class="tp-body">
-          <span class="tp-name">Firebase (Google LLC)</span>
-          <span class="tp-desc">Used for push notifications (FCM), app analytics, and crash reporting (Crashlytics). <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy →</a></span>
-        </span>
-      </li>
-
-      <li>
-        <span class="tp-icon">💰</span>
-        <span class="tp-body">
-          <span class="tp-name">RevenueCat</span>
-          <span class="tp-desc">Manages in-app subscriptions and purchase verification across Android and iOS. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy →</a></span>
-        </span>
-      </li>
-      <li>
-        <span class="tp-icon">🗺️</span>
-        <span class="tp-body">
-          <span class="tp-name">Geocoding Services</span>
-          <span class="tp-desc">Converts GPS coordinates into readable addresses and vice versa for location features. Processing is handled by underlying platform geocoding APIs.</span>
-        </span>
-      </li>
-      <li>
-        <span class="tp-icon">🖼️</span>
-        <span class="tp-body">
-          <span class="tp-name">uCrop / Image Cropper</span>
-          <span class="tp-desc">Used to crop and resize images selected from your gallery or camera. All image processing happens on-device and no images are sent to external servers.</span>
-        </span>
-      </li>
-      <li>
-        <span class="tp-icon">📡</span>
-        <span class="tp-body">
-          <span class="tp-name">Socket.IO</span>
-          <span class="tp-desc">Enables real-time chat messaging and live updates via WebSocket connections to our servers at api.kettleweb.com.</span>
-        </span>
-      </li>
-      <li>
-        <span class="tp-icon">🔒</span>
-        <span class="tp-body">
-          <span class="tp-name">Flutter Secure Storage</span>
-          <span class="tp-desc">Stores authentication tokens securely in the device's OS-level encrypted keystore. No data leaves the device via this mechanism.</span>
-        </span>
-      </li>
-    </ul>
-  </section>
-
-  <!-- ── 6. In-App Purchases ──────────────────────────── -->
-  <section id="in-app-purchases">
-    <div class="section-header">
-      <div class="section-icon">💳</div>
-      <h2 class="section-title">In-App Purchases &amp; Subscriptions</h2>
-    </div>
-    <p>Kettle offers optional in-app purchases and subscriptions to unlock premium features. All purchases are processed by:</p>
-    <ul>
-      <li><strong>Google Play Billing</strong> — for Android users</li>
-      <li><strong>Apple App Store</strong> — for iOS users</li>
-      <li><strong>RevenueCat</strong> — as our subscription management and entitlement layer</li>
-    </ul>
-    <p>We do not store your full payment card details. Payment processing is handled entirely by Google, Apple, and RevenueCat under their respective security standards (PCI-DSS compliant).</p>
-    <p>Purchase history and subscription status are retained to validate your access to premium features and to process refunds where applicable.</p>
-  </section>
-
-  <!-- ── 7. Data Sharing ──────────────────────────────── -->
-  <section id="data-sharing">
-    <div class="section-header">
-      <div class="section-icon">🤝</div>
-      <h2 class="section-title">Data Sharing</h2>
-    </div>
-    <p>We may share your information only in the following limited circumstances:</p>
-    <ul>
-      <li><strong>With other users</strong> — your public profile (name, photo, professional bio) is visible to other Kettle users as part of the discovery and connection features.</li>
-      <li><strong>With service providers</strong> — third-party providers listed above receive only the minimum data necessary to deliver their services on our behalf.</li>
-      <li><strong>For legal reasons</strong> — we may disclose data when required by law, court order, or to protect the rights and safety of our users or the public.</li>
-      <li><strong>Business transfers</strong> — in the event of a merger, acquisition, or asset sale, user data may be transferred as part of business assets, subject to the same privacy commitments.</li>
-    </ul>
-    <div class="highlight">
-      <p>We <strong>never</strong> sell, rent, or trade your personal information to advertisers, data brokers, or any other third party for commercial gain.</p>
-    </div>
-  </section>
-
-  <!-- ── 8. Data Retention ────────────────────────────── -->
-  <section id="data-retention">
-    <div class="section-header">
-      <div class="section-icon">🗄️</div>
-      <h2 class="section-title">Data Retention</h2>
-    </div>
-    <p>We retain your personal data for as long as your account is active or as needed to provide our services:</p>
-    <ul>
-      <li><strong>Account & profile data</strong> — retained until you delete your account.</li>
-      <li><strong>Chat messages</strong> — stored on our servers for message delivery. You may delete individual messages within the app at any time.</li>
-      <li><strong>Location data</strong> — used in real-time and not stored persistently beyond the active session unless required for a specific feature.</li>
-      <li><strong>Analytics & crash logs</strong> — retained for up to 14 months per Firebase's standard data retention policy.</li>
-      <li><strong>Purchase records</strong> — retained for accounting and legal compliance purposes (typically 7 years as required by applicable financial regulations).</li>
-    </ul>
-    <p>Upon account deletion, we will delete or anonymise your personal data within <strong>30 days</strong>, except where legal obligations require longer retention.</p>
-  </section>
-
-  <!-- ── 9. Security ──────────────────────────────────── -->
-  <section id="security">
-    <div class="section-header">
-      <div class="section-icon">🛡️</div>
-      <h2 class="section-title">Security</h2>
-    </div>
-    <p>We implement industry-standard security measures to protect your data:</p>
-    <ul>
-      <li><strong>HTTPS / TLS encryption</strong> — all data transmitted between the app and our servers is encrypted.</li>
-      <li><strong>Secure token storage</strong> — authentication tokens are stored in the OS-level keystore using Flutter Secure Storage, inaccessible to other apps.</li>
-      <li><strong>Cryptographic hashing</strong> — sensitive data is hashed using standard cryptographic algorithms before storage.</li>
-      <li><strong>Access control</strong> — server-side access to user data is restricted on a need-to-know basis with role-based access controls.</li>
-    </ul>
-    <p>While we take every reasonable precaution, no method of electronic transmission or storage is 100% secure. We encourage you to use a strong password and keep your authentication credentials private.</p>
-  </section>
-
-  <!-- ── 10. Children ─────────────────────────────────── -->
-  <section id="children">
-    <div class="section-header">
-      <div class="section-icon">🧒</div>
-      <h2 class="section-title">Children's Privacy</h2>
-    </div>
-    <p>Kettle is intended for users who are <strong>18 years of age or older</strong>. It is a platform designed for professional adults. We do not knowingly collect personal information from individuals under 18.</p>
-    <p>If you believe a minor has created an account or provided personal data, please contact us immediately at <a href="mailto:privacy@kettleweb.com">privacy@kettleweb.com</a> and we will promptly investigate and delete such data.</p>
-  </section>
-
-  <!-- ── 11. Your Rights ──────────────────────────────── -->
-  <section id="your-rights">
-    <div class="section-header">
-      <div class="section-icon">⚖️</div>
-      <h2 class="section-title">Your Rights</h2>
-    </div>
-    <p>Depending on your jurisdiction (including India's Digital Personal Data Protection Act, GDPR for EU residents, etc.), you may have the following rights:</p>
-    <ul>
-      <li><strong>Access</strong> — request a copy of the personal data we hold about you.</li>
-      <li><strong>Correction</strong> — request correction of inaccurate or incomplete data.</li>
-      <li><strong>Deletion</strong> — request deletion of your account and associated personal data ("right to erasure").</li>
-      <li><strong>Portability</strong> — request your data in a structured, machine-readable format.</li>
-      <li><strong>Restriction</strong> — request that we limit processing of your data under certain circumstances.</li>
-      <li><strong>Objection</strong> — object to processing based on our legitimate interests.</li>
-      <li><strong>Withdraw consent</strong> — withdraw any consent you have previously given at any time.</li>
-    </ul>
-    <p>To exercise any of these rights, please contact us at <a href="mailto:privacy@kettleweb.com">privacy@kettleweb.com</a>. We will respond within <strong>30 days</strong>.</p>
-    <div class="info-box">
-      <p>ℹ️ You can delete your account directly from within the app under <strong>Settings → Account → Delete Account</strong>.</p>
-    </div>
-  </section>
-
-  <!-- ── 12. Changes ──────────────────────────────────── -->
-  <section id="changes">
-    <div class="section-header">
-      <div class="section-icon">🔄</div>
-      <h2 class="section-title">Changes to This Policy</h2>
-    </div>
-    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. When we make material changes, we will:</p>
-    <ul>
-      <li>Update the "Effective Date" at the top of this page.</li>
-      <li>Send a push notification and/or in-app alert to registered users informing them of the update.</li>
-    </ul>
-    <p>Your continued use of the App after changes are posted constitutes acceptance of the updated policy. We encourage you to review this policy periodically.</p>
-  </section>
-
-  <!-- ── 13. Contact ──────────────────────────────────── -->
-  <section id="contact">
-    <div class="section-header">
-      <div class="section-icon">📬</div>
-      <h2 class="section-title">Contact Us</h2>
-    </div>
-    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact our Privacy Team:</p>
-    <div class="contact-card">
-      <h3>🏢 NUVOTA INNOVATIONS PRIVATE LIMITED</h3>
-      <div class="contact-row">
-        <span class="ci">📍</span>
-        <p>36/259, A&amp;F Square Building, Seaport Airport Road,<br>Near B M Collage, Thrikkakara,<br>Ernakulam – 682021, Kerala, India (IN)</p>
+    <!-- ── 5. Third-Party Services ──────────────────────── -->
+    <section id="third-party">
+      <div class="section-header">
+        <div class="section-icon">🔗</div>
+        <h2 class="section-title">Third-Party Services</h2>
       </div>
-      <div class="contact-row">
-        <span class="ci">📧</span>
-        <p><a href="mailto:privacy@kettleweb.com">privacy@kettleweb.com</a></p>
-      </div>
-      <div class="contact-row">
-        <span class="ci">🌐</span>
-        <p><a href="https://kettleweb.com" target="_blank" rel="noopener">kettleweb.com</a></p>
-      </div>
-      <p style="margin-top:14px; font-size:13px; color: var(--text-dim);">We aim to respond to all privacy-related enquiries within 48 business hours.</p>
-    </div>
-  </section>
+      <p>The App integrates the following third-party services. Each operates under its own privacy policy and terms.
+      </p>
 
-</main>
+      <ul class="third-party-list">
+        <li>
+          <span class="tp-icon">🔥</span>
+          <span class="tp-body">
+            <span class="tp-name">Firebase (Google LLC)</span>
+            <span class="tp-desc">Used for push notifications (FCM), app analytics, and crash reporting (Crashlytics).
+              <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy
+                Policy →</a></span>
+          </span>
+        </li>
 
-<!-- ══════════ FOOTER ══════════ -->
-<footer>
-  <p>© 2026 NUVOTA INNOVATIONS PRIVATE LIMITED. All rights reserved. &nbsp;·&nbsp; <a href="#overview">Back to top ↑</a></p>
-</footer>
+        <li>
+          <span class="tp-icon">💰</span>
+          <span class="tp-body">
+            <span class="tp-name">RevenueCat</span>
+            <span class="tp-desc">Manages in-app subscriptions and purchase verification across Android and iOS. <a
+                href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy
+                →</a></span>
+          </span>
+        </li>
+        <li>
+          <span class="tp-icon">🗺️</span>
+          <span class="tp-body">
+            <span class="tp-name">Geocoding Services</span>
+            <span class="tp-desc">Converts GPS coordinates into readable addresses and vice versa for location features.
+              Processing is handled by underlying platform geocoding APIs.</span>
+          </span>
+        </li>
+        <li>
+          <span class="tp-icon">🖼️</span>
+          <span class="tp-body">
+            <span class="tp-name">uCrop / Image Cropper</span>
+            <span class="tp-desc">Used to crop and resize images selected from your gallery or camera. All image
+              processing happens on-device and no images are sent to external servers.</span>
+          </span>
+        </li>
+        <li>
+          <span class="tp-icon">📡</span>
+          <span class="tp-body">
+            <span class="tp-name">Socket.IO</span>
+            <span class="tp-desc">Enables real-time chat messaging and live updates via WebSocket connections to our
+              servers at api.kettleweb.com.</span>
+          </span>
+        </li>
+        <li>
+          <span class="tp-icon">🔒</span>
+          <span class="tp-body">
+            <span class="tp-name">Flutter Secure Storage</span>
+            <span class="tp-desc">Stores authentication tokens securely in the device's OS-level encrypted keystore. No
+              data leaves the device via this mechanism.</span>
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ── 6. In-App Purchases ──────────────────────────── -->
+    <section id="in-app-purchases">
+      <div class="section-header">
+        <div class="section-icon">💳</div>
+        <h2 class="section-title">In-App Purchases &amp; Subscriptions</h2>
+      </div>
+      <p>Kettle offers optional in-app purchases and subscriptions to unlock premium features. All purchases are
+        processed by:</p>
+      <ul>
+        <li><strong>Google Play Billing</strong> — for Android users</li>
+        <li><strong>Apple App Store</strong> — for iOS users</li>
+        <li><strong>RevenueCat</strong> — as our subscription management and entitlement layer</li>
+      </ul>
+      <p>We do not store your full payment card details. Payment processing is handled entirely by Google, Apple, and
+        RevenueCat under their respective security standards (PCI-DSS compliant).</p>
+      <p>Purchase history and subscription status are retained to validate your access to premium features and to
+        process refunds where applicable.</p>
+    </section>
+
+    <!-- ── 7. Data Sharing ──────────────────────────────── -->
+    <section id="data-sharing">
+      <div class="section-header">
+        <div class="section-icon">🤝</div>
+        <h2 class="section-title">Data Sharing</h2>
+      </div>
+      <p>We may share your information only in the following limited circumstances:</p>
+      <ul>
+        <li><strong>With other users</strong> — your public profile (name, photo, professional bio) is visible to other
+          Kettle users as part of the discovery and connection features.</li>
+        <li><strong>With service providers</strong> — third-party providers listed above receive only the minimum data
+          necessary to deliver their services on our behalf.</li>
+        <li><strong>For legal reasons</strong> — we may disclose data when required by law, court order, or to protect
+          the rights and safety of our users or the public.</li>
+        <li><strong>Business transfers</strong> — in the event of a merger, acquisition, or asset sale, user data may be
+          transferred as part of business assets, subject to the same privacy commitments.</li>
+      </ul>
+      <div class="highlight">
+        <p>We <strong>never</strong> sell, rent, or trade your personal information to advertisers, data brokers, or any
+          other third party for commercial gain.</p>
+      </div>
+    </section>
+
+    <!-- ── 8. Data Retention ────────────────────────────── -->
+    <section id="data-retention">
+      <div class="section-header">
+        <div class="section-icon">🗄️</div>
+        <h2 class="section-title">Data Retention</h2>
+      </div>
+      <p>We retain your personal data for as long as your account is active or as needed to provide our services:</p>
+      <ul>
+        <li><strong>Account & profile data</strong> — retained until you delete your account.</li>
+        <li><strong>Chat messages</strong> — stored on our servers for message delivery. You may delete individual
+          messages within the app at any time.</li>
+        <li><strong>Location data</strong> — used in real-time and not stored persistently beyond the active session
+          unless required for a specific feature.</li>
+        <li><strong>Analytics & crash logs</strong> — retained for up to 14 months per Firebase's standard data
+          retention policy.</li>
+        <li><strong>Purchase records</strong> — retained for accounting and legal compliance purposes (typically 7 years
+          as required by applicable financial regulations).</li>
+      </ul>
+      <p>Upon account deletion, we will delete or anonymise your personal data within <strong>30 days</strong>, except
+        where legal obligations require longer retention.</p>
+    </section>
+
+    <!-- ── 9. Security ──────────────────────────────────── -->
+    <section id="security">
+      <div class="section-header">
+        <div class="section-icon">🛡️</div>
+        <h2 class="section-title">Security</h2>
+      </div>
+      <p>We implement industry-standard security measures to protect your data:</p>
+      <ul>
+        <li><strong>HTTPS / TLS encryption</strong> — all data transmitted between the app and our servers is encrypted.
+        </li>
+        <li><strong>Secure token storage</strong> — authentication tokens are stored in the OS-level keystore using
+          Flutter Secure Storage, inaccessible to other apps.</li>
+        <li><strong>Cryptographic hashing</strong> — sensitive data is hashed using standard cryptographic algorithms
+          before storage.</li>
+        <li><strong>Access control</strong> — server-side access to user data is restricted on a need-to-know basis with
+          role-based access controls.</li>
+      </ul>
+      <p>While we take every reasonable precaution, no method of electronic transmission or storage is 100% secure. We
+        encourage you to use a strong password and keep your authentication credentials private.</p>
+    </section>
+
+    <!-- ── 10. Children ─────────────────────────────────── -->
+    <section id="children">
+      <div class="section-header">
+        <div class="section-icon">🧒</div>
+        <h2 class="section-title">Children's Privacy</h2>
+      </div>
+      <p>Kettle is intended for users who are <strong>18 years of age or older</strong>. It is a platform designed for
+        professional adults. We do not knowingly collect personal information from individuals under 18.</p>
+      <p>If you believe a minor has created an account or provided personal data, please contact us immediately at <a
+          href="mailto:support@kettleweb.com">support@kettleweb.com</a> and we will promptly investigate and delete such
+        data.</p>
+    </section>
+
+    <!-- ── 11. Your Rights ──────────────────────────────── -->
+    <section id="your-rights">
+      <div class="section-header">
+        <div class="section-icon">⚖️</div>
+        <h2 class="section-title">Your Rights</h2>
+      </div>
+      <p>Depending on your jurisdiction (including India's Digital Personal Data Protection Act, GDPR for EU residents,
+        etc.), you may have the following rights:</p>
+      <ul>
+        <li><strong>Access</strong> — request a copy of the personal data we hold about you.</li>
+        <li><strong>Correction</strong> — request correction of inaccurate or incomplete data.</li>
+        <li><strong>Deletion</strong> — request deletion of your account and associated personal data ("right to
+          erasure").</li>
+        <li><strong>Portability</strong> — request your data in a structured, machine-readable format.</li>
+        <li><strong>Restriction</strong> — request that we limit processing of your data under certain circumstances.
+        </li>
+        <li><strong>Objection</strong> — object to processing based on our legitimate interests.</li>
+        <li><strong>Withdraw consent</strong> — withdraw any consent you have previously given at any time.</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us at <a
+          href="mailto:support@kettleweb.com">support@kettleweb.com</a>. We will respond within <strong>30
+          days</strong>.</p>
+      <div class="info-box">
+        <p>ℹ️ You can delete your account directly from within the app under <strong>Settings → Account → Delete
+            Account</strong>.</p>
+      </div>
+    </section>
+
+    <!-- ── 12. Changes ──────────────────────────────────── -->
+    <section id="changes">
+      <div class="section-header">
+        <div class="section-icon">🔄</div>
+        <h2 class="section-title">Changes to This Policy</h2>
+      </div>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal
+        requirements. When we make material changes, we will:</p>
+      <ul>
+        <li>Update the "Effective Date" at the top of this page.</li>
+        <li>Send a push notification and/or in-app alert to registered users informing them of the update.</li>
+      </ul>
+      <p>Your continued use of the App after changes are posted constitutes acceptance of the updated policy. We
+        encourage you to review this policy periodically.</p>
+    </section>
+
+    <!-- ── 13. Contact ──────────────────────────────────── -->
+    <section id="contact">
+      <div class="section-header">
+        <div class="section-icon">📬</div>
+        <h2 class="section-title">Contact Us</h2>
+      </div>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please
+        contact our Privacy Team:</p>
+      <div class="contact-card">
+        <h3>🏢 NUVOTA INNOVATIONS PRIVATE LIMITED</h3>
+        <div class="contact-row">
+          <span class="ci">📍</span>
+          <p>36/259, A&amp;F Square Building, Seaport Airport Road,<br>Near B M Collage, Thrikkakara,<br>Ernakulam –
+            682021, Kerala, India (IN)</p>
+        </div>
+        <div class="contact-row">
+          <span class="ci">📧</span>
+          <p><a href="mailto:support@kettleweb.com">support@kettleweb.com</a></p>
+        </div>
+        <div class="contact-row">
+          <span class="ci">🌐</span>
+          <p><a href="https://kettleweb.com" target="_blank" rel="noopener">kettleweb.com</a></p>
+        </div>
+        <p style="margin-top:14px; font-size:13px; color: var(--text-dim);">We aim to respond to all privacy-related
+          enquiries within 48 business hours.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <p>© 2026 NUVOTA INNOVATIONS PRIVATE LIMITED. All rights reserved. &nbsp;·&nbsp; <a href="#overview">Back to top
+        ↑</a></p>
+  </footer>
 
 </body>
+
 </html>
